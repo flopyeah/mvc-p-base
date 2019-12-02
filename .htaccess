@@ -2,6 +2,6 @@
 RewriteEngine on
 
 #si le fichier existe je ne prend pas en considération la réécriture
-RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-f
 
-RewriteRule ^(.*)$ index.php?action=$1 [QSA,L]
+#RewriteRule ^(.*)$ index.php?action=$1 [QSA,L]

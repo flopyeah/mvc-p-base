@@ -7,7 +7,7 @@ try {
     
     // Routage
     if (!isset($_GET['action'])) { 
-        // si je n'ai pas d'action je redirige vers la home 
+        // si je n'ai pas d'action je redirige par défaut vers la home page
         accueil();
     }
     else {
@@ -20,6 +20,11 @@ try {
             // page qui sommes-nous
             case 'qui-sommes-nous' : 
                 quiSommesNous();
+                break;
+
+            // page avec parametre 
+            case 'article' : 
+                articleInfo($_GET['id']);
                 break;
 
             /// Si une erreur est renvoyée, l'utilisateur est redirigé vers une page 404

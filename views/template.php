@@ -22,7 +22,7 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav mr-auto">
                       <li class="nav-item">
-                          <a class="nav-link" href="qui-sommes-nous">Qui-sommes-nous ?</a>
+                          <a class="nav-link" href="index.php?action=qui-sommes-nous">Qui-sommes-nous ?</a>
                       </li>
                     </ul>
                 </div>
