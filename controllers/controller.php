@@ -3,15 +3,16 @@
 require 'models/model.php';
 
 // Affiche la page d'acceuil
-function accueil() {
+function accueilAction() {
     // j'affectue ici mes appel au model si je dois aller chercher des infos en BDD
+
 
     // appel de la template 
     require 'views/viewHome.php';
 }
 
 // Affiche la page Qui sommes nous
-function quiSommesNous() {
+function quiSommesNousAction() {
     // j'affectue ici mes appel au model si je dois aller chercher des infos en BDD
     
 
@@ -19,7 +20,8 @@ function quiSommesNous() {
     require 'views/viewQuiSommes.php';
 }
 
-function articleInfo($id_article) {
+// affiche la page article en fonction de son id_article 
+function articleInfoAction($id_article) {
     // j'affectue ici mes appel au model si je dois aller chercher des infos en BDD
     $article = getArticleById($id_article);
 
@@ -28,7 +30,7 @@ function articleInfo($id_article) {
 }
 
 // Affiche une erreur
-function erreur($msgErreur) {
+function erreurAction($msgErreur) {
     // appel de la template 
     require 'views/view404.php';
 }

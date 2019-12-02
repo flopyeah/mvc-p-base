@@ -8,23 +8,23 @@ try {
     // Routage
     if (!isset($_GET['action'])) { 
         // si je n'ai pas d'action je redirige par défaut vers la home page
-        accueil();
+        accueilAction();
     }
     else {
         switch($_GET['action']) {
             // accueil
             case '':
-                accueil();
+                accueilAction();
             break;
 
             // page qui sommes-nous
             case 'qui-sommes-nous' : 
-                quiSommesNous();
+                quiSommesNousAction();
                 break;
 
             // page avec parametre 
             case 'article' : 
-                articleInfo($_GET['id']);
+                articleInfoAction($_GET['id']);
                 break;
 
             /// Si une erreur est renvoyée, l'utilisateur est redirigé vers une page 404
@@ -37,5 +37,5 @@ try {
 }
 catch (Exception $e) {
     // Si une erreur est renvoyée, l'utilisateur est redirigé vers une page 404>
-    erreur($e->getMessage());
+    erreurAction($e->getMessage());
 }
