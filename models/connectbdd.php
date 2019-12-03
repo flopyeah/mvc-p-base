@@ -5,7 +5,7 @@ function getBdd() {
     // connexion à la BDD 
     $servername = 'localhost';
     $username   = 'root';
-    $password   = '';
+    $password   = 'root';
     $dbname     = 'mvc_blog';
     
     //On essaie de se connecter
