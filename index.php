@@ -17,6 +17,10 @@ try {
                 accueilAction();
             break;
 
+            case 'contact':
+                contactAction();
+            break;
+
             // page qui sommes-nous
             case 'qui-sommes-nous' : 
                 quiSommesNousAction();
@@ -24,6 +28,7 @@ try {
 
             // page avec parametre 
             case 'article' : 
+                
                 articleInfoAction($_GET['id']);
                 break;
 

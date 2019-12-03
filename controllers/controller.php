@@ -11,6 +11,14 @@ function accueilAction() {
     require 'views/viewHome.php';
 }
 
+// Affiche la page contact 
+function contactAction() {
+    // pour l'instant pas d'appel en BDD 
+
+    // appel de la template 
+    require 'views/viewContact.php';
+}
+
 // Affiche la page Qui sommes nous
 function quiSommesNousAction() {
     // j'affectue ici mes appel au model si je dois aller chercher des infos en BDD
